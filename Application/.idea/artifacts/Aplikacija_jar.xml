@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Aplikacija:jar">
+    <output-path>D:/Almost_Finished</output-path>
+    <root id="archive" name="Aplikacija.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="D:/Almost_Finished/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Aplikacija" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uzduotys>
+    <uzduotis>
+        <trumpasAprasymas>MORSE_CODE</trumpasAprasymas>
+        <detales>"Map&lt;String, String&gt; m = new HashMap&lt;&gt;();\\n\" +\n" +
+            "                \"            Key - raidė (anglų k.);\\n\" +\n" +
+            "                \"            Value - Morzės abėcėlės atitinkanti raidei;\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            https://lt.wikipedia.org/wiki/Morz%C4%97s_ab%C4%97c%C4%97l%C4%97\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            Encode ir Decode metodų aprašymas:\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            Sakinys kurį reikia užšifruoti/iššifruoti yra padalinamas į žodžių masyvą.\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            String[] wordArray;\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            Tam kad sakinys būtų padalintas į žodžių masyvą reikia duoti komandą split ir nurodyti tarpų tarp žodžių skaičių:\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            String[] wordArray = sentence.split('regex:' \\\"*tarpų skaičius*\\\");\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            Sėkmingai sukūrus žodžių masyvą, sukuriami du foreach ciklai.\\n\" +\n" +
+            "                \"            Pirmame foreach cikle kiekvienas žodžių masyvo elementas padalinamas į raides pasinaudojus tuo pačiu split metodu, kuris buvo naudojamas sakinio į žodžius padalinimui (žr. aukščiau).\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            //wordArray yra padalintas sakinys\\n\" +\n" +
+            "                \"            for(String word : wordArray) {\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            //padalinam žodžius į raides (word yra masyvo wordArray elementas)\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            String[] letter = word.split('regex':*\\\"tarpų skaičius\\\"*);\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            //Į šį kintamąjį sudėsime užšifruotą sakinį\\n\" +\n" +
+            "                \"            String uzkoduotasSakinys = \\\"\\\";\\n\" +\n" +
+            "                \"            uzkoduotasSakinys += \\\"   \\\"; //tarpai tarp užšifruotų žodžių\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            Antrasis for ciklas analizuos kiekvieną raidę atskirai ir ieškos reikšmių žemėlapyje atitinkamą jos reikšmę morzės abecėlėje:\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            for(String keyLetter : letter) {\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            //sakinys padalintas į žodžių masyvą,\\n\" +\n" +
+            "                \"            //žodžiai padalinti į raidžių masyvą\\n\" +\n" +
+            "                \"            //raidės yra žemėlapio raktai\\n\" +\n" +
+            "                \"            //raktai gražina morzės abecėlę\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            uzkoduotasSakinys += map.get(keyLetter);\\n\" +\n" +
+            "                \"            }\\n\" +\n" +
+            "                \"\\n\" +\n" +
+            "                \"            return uzkoduotasSakinys\"", "</detales>
+        <skiltis>SEKMADIENIS</skiltis>
+    </uzduotis>
+</uzduotys>

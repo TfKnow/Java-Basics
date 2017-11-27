@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane fx:id="pagrindas" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.Controller">
+    <left>
+
+        <VBox>
+            <children>
+                <TableView fx:id="lentele" onMouseClicked="#paspaudziau" prefHeight="508.0" prefWidth="264.0"
+                           VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn prefWidth="263.0" text="Pamoka">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="trumpasAprasymas"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+
+    </left>
+
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu text="File">
+                    <items>
+                        <MenuItem onAction="#pridetiNaujaUzduoti" text="Naujas"/>
+                        <SeparatorMenuItem/>
+                        <MenuItem text="Edit" onAction="#modifikavimoLangas"/>
+                        <SeparatorMenuItem/>
+                        <MenuItem onAction="#istrintiUzduoti" text="Delete"/>
+                        <SeparatorMenuItem/>
+                        <MenuItem onAction="#uzdarauAp" text="Close"/>
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+
+    <bottom>
+        <HBox prefHeight="31.0" prefWidth="914.0" BorderPane.alignment="BOTTOM_RIGHT">
+            <Label fx:id="terminas"/>
+        </HBox>
+    </bottom>
+    <right>
+        <VBox prefHeight="275.0" prefWidth="650.0" BorderPane.alignment="CENTER">
+            <HBox>
+                <children>
+                    <ToolBar prefHeight="45.0" prefWidth="650.0" HBox.hgrow="ALWAYS">
+                        <items>
+                            <TextField fx:id="filterLaukas" prefWidth="-1.0" HBox.hgrow="ALWAYS"/>
+                            <Label prefHeight="21.0" prefWidth="365.0" text="Sąrašo filtras " HBox.hgrow="ALWAYS"/>
+                        </items>
+                    </ToolBar>
+                </children>
+            </HBox>
+            <TextArea fx:id="detales" prefHeight="489.0" wrapText="true" VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </right>
+</BorderPane>

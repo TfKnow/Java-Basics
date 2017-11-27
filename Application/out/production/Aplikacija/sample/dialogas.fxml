@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="sample.DialogController">
+    <children>
+        <TextArea fx:id="detalesLaukas" layoutX="10.0" layoutY="80.0" prefHeight="231.0" prefWidth="338.0"
+                  wrapText="true"/>
+        <TextField fx:id="trumpasAprasymasLaukas" layoutX="14.0" layoutY="30.0"/>
+
+        <Label layoutX="231.0" layoutY="35.0" prefHeight="21.0" prefWidth="187.0" text="Name"/>
+        <Label layoutX="361.0" layoutY="275.0" prefHeight="21.0" prefWidth="171.0" text="Details "/>
+        <Label layoutX="458.0" layoutY="354.0" prefHeight="21.0" prefWidth="128.0"/>
+        <MenuButton layoutX="212.0" layoutY="360.0" mnemonicParsing="false" text="JAVA">
+            <items>
+                <MenuItem mnemonicParsing="false" text="BASICS"/>
+                <MenuItem mnemonicParsing="false" text="ALGORITHMS"/>
+                <MenuItem mnemonicParsing="false" text="CODEWARS"/>
+            </items>
+        </MenuButton>
+        <MenuButton layoutX="212.0" layoutY="323.0" mnemonicParsing="false" text="MATHEMATICS">
+            <items>
+                <MenuItem mnemonicParsing="false" text="ALGEBRA"/>
+                <MenuItem mnemonicParsing="false" text="TRIGONOMETRY"/>
+                <MenuItem mnemonicParsing="false" text="CALCULUS"/>
+            </items>
+        </MenuButton>
+
+        <TextField fx:id="skiltisLaukas" layoutX="14.0" layoutY="323.0"/>
+    </children>
+</AnchorPane>
